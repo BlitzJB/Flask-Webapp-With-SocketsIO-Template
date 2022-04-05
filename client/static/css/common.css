@@ -1,0 +1,30 @@
+:root {
+    --c1: #200F21;
+    --c2: #382039;
+    --c3: #5A3D5C;
+    --c4: #F638DC;
+}
+
+@font-face {
+    font-family: "Athelas-Bold";
+    src: url("../static/fonts/Athelas-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Athelas-Regular";
+    src: url("../static/fonts/Athelas-Regular.ttf");
+}
+
+body, html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Athelas-Regular";
+    color: rgb(205, 179, 214);
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--c1);
+}

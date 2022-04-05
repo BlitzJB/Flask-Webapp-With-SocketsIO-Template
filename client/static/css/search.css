@@ -1,0 +1,49 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.results__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.result__thumbnail {
+    width: 17vw;
+    margin-right: 5%;
+}
+
+.result__details {
+    width: 100%;
+}
+
+.result__title {
+
+}
+
+.result__subtitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.result__artist {
+    margin-right: 1%;
+}
+
+.result__duration {
+    margin-left: auto;
+}
