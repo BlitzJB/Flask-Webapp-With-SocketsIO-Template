@@ -4,7 +4,7 @@ from server import app
 
 import json
 
-runconfig = json.load(open('runconfig.json'))
+runconfig = json.load(open('config.json'))
 PRODUCTION = runconfig.get('production', False)
 HOST = runconfig.get('host', '0.0.0.0')
 PORT = runconfig.get('port', 5000)

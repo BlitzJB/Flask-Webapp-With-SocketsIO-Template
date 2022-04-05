@@ -1,1 +1,0 @@
-This isnt great practice, but looking at these as i work on the latest iteration tells me what i *shouldnt* do. also, its a display of how much i learnt throughout this project :)
