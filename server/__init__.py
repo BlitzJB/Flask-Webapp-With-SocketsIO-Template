@@ -1,1 +1,1 @@
-from .views import app
+from .sockets import app, socket

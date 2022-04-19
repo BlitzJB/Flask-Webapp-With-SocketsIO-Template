@@ -12,8 +12,29 @@
 <body>
     <p class="cls">Hello World!</p>
 
+    <button id="click">Click</button>
 
-    <script src="../static/js/script.js"></script>
+    <div id="output"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+
+    <script>
+        const socket = io();
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        const click = document.getElementById('click');
+        click.addEventListener('click', () => {
+            console.log('Clicked');
+            socket.emit('click', {data: 'This is data'});
+        });
+
+        socket.on('resp', (data) => {
+            console.log('Response from server');
+            console.log(data);
+        });
+    </script>
 
 </body>
 </html>
